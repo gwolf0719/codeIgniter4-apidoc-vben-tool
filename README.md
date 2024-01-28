@@ -5,14 +5,14 @@
 - vben-admin
 - apidoc
 
-## 依照資料表建構 Model 檔案
+## createModel 依照資料表建構 Model 檔案
 > 我預設所有和資料表相關的 Model 檔案都是 Mod開頭的駝峰命名檔案（資料表名稱需要為小寫底線的蛇式命名）
 ```
 php spark make:basemodel ModelName tableName
 ```
 這樣會建構出對應的 Model 檔案，主要會將所有的資料表欄位填入這樣後面呼叫會比較輕鬆
 
-## 建構 API 檔案和 apidoc 內容
+## createCrudApi 建構 API 檔案和 apidoc 內容
 > 有兩個作法可以使用
 ```
 php spark make:apicontroller ControllerName ModelName TableName
